@@ -1,0 +1,30 @@
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    text-align: center;
+}
+
+.site-footer {
+    background-image: linear-gradient(#b4e1c2, white);
+    padding: 20px 0;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-address {
+    color: rgb(24, 24, 165);
+    text-align: left;
+}
+
+.footer-skills {
+    text-align: center;
+}
+
+.footer-skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

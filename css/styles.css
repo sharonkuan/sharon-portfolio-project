@@ -1,0 +1,56 @@
+body {
+    background-color: #dff1e8;
+    font-family: "Oxygen", sans-serif;
+
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", cursive;
+    color: #210cc0;
+}
+
+header h2 {
+    color: #210cc0;
+    align-items: left;
+}
+
+header h3 {
+    font-size: 18px;
+    color: blue;
+}
+
+.pageHeader h2 {
+    text-align: center;
+    height: 10px;
+}
+
+.navbar {
+    background-color: #418561;
+}
+
+
+.left-column {
+    flex: 2;
+
+}
+
+.right-column {
+    flex: 1;
+
+}
+
+.right-column img {
+    width: 100%;
+
+}
+
+p {
+    padding: 0px 15px;
+}
