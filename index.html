@@ -44,7 +44,6 @@
       </div>
     </header>
 
-    <!-- main -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
@@ -76,12 +75,12 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="skills.html"
                 ><i class="fa fa-star fa-lg"></i> Skills</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="projects.html"
                 ><i class="fa fa-book fa-lg"></i> Projects</a
               >
             </li>
@@ -95,9 +94,91 @@
       </div>
     </nav>
 
+    <!-- main -->
     <div class="content-container">
+      <div class="row content-row">
+        <div class="col-md-8 mx-auto">
+          <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#homeCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#homeCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#homeCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <a
+                class="carousel-control-prev"
+                href="#homeCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#homeCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="images/ThreeTrails.png"
+                  alt="The three trails converge at a scenic mountain overlook."
+                />
+                <div class="carousel-caption">
+                  <h5>
+                    Handshake of Three - Different Perspectives. Shared
+                    Understanding.
+                  </h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="images/ThreeHikersInFrontOfMountain.png"
+                  alt="Three hikers standing together before a green mountain landscape, each extending an arm into the center and stacking their hands to symbolize teamwork, unity, and readiness for challenges."
+                />
+                <div class="carousel-caption">
+                  <h5>Teamwork - Working Together Toward Common Goals.</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="images/ConnectingPeopleProcessesandTechnology.png"
+                  alt="Connecting people, processes, and technology."
+                />
+                <div class="carousel-caption">
+                  <h5>Better Solutions Together.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="content-row">
-        <div class="left-column">
+        <div class="col-md-12">
           <div>
             <h3>Introduction</h3>
             <p>
@@ -129,16 +210,6 @@
               GitHub projects, modern front-end technologies, and AI-assisted
               software development.
             </p>
-          </div>
-        </div>
-
-        <div class="right-column">
-          <div id="blockImage">
-            <img
-              class="img-fluid"
-              src="images/HandshakeOfThree.png"
-              alt="A three hands interlocked in a triangular circle represents unity and collaboration."
-            />
           </div>
         </div>
       </div>

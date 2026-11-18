@@ -54,3 +54,11 @@ header h3 {
 p {
     padding: 0px 15px;
 }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+}
