@@ -20,9 +20,33 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Montserrat", cursive;
   color: #210cc0;
+}
+
+.myTabDiv {
+  border-radius: 5%;
+
+  .button:hover,
+  .button.active,
+  .button:focus-visible {
+    outline: 100px solid #0a5134;
+    outline-offset: 5px; /* Creates a small gap between the tab and the outer line */
+  }
+
+  .nav-item {
+    font-family: "Montserrat", cursive;
+    color: hwb(247 5% 25%);
+    background-color: rgb(174, 233, 174);
+    border-color: #210cc0;
+  }
+
+  #myTabContent {
+    background-color: rgb(216, 236, 215);
+    border-color: #210cc0;
+  }
 }
 
 header h2 {
@@ -79,6 +103,26 @@ p {
 }
 
 .firstDiv {
-    margin: 5px 0px 20px;
-    padding: 0;
+  margin: 5px 0px 20px;
+  padding: 0;
+}
+
+.blockquoteContent {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.blockquoteDiv {
+    background-image: linear-gradient(to right, #128103, #249315, #34ae23);
+    color: antiquewhite;
+
+    .blockquote-footer {
+        color:azure;
+    }
+}
+
+#HandshakeOfThreeSection {
+  scroll-margin-top: 80px;
 }
