@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+.site-footer {
+  background-image: linear-gradient($color-footer-start, white);
+  padding: 20px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  text-align: center;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-address {
+  color: $color-footer-address;
+  text-align: left;
+}
+
+.footer-skills {
+  text-align: center;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}

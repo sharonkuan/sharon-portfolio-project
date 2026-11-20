@@ -1,0 +1,170 @@
+@use "variables" as *;
+@use "footer";
+
+// ---------- Base ----------
+// Kept as CSS custom properties in case main-content.css or footer.css use them
+:root {
+  --primary-color: #{$color-primary};
+  --header-gradient-start: #{$color-header-start};
+  --header-gradient-end: #{$color-header-end};
+}
+
+body {
+  background-color: $color-page-bg;
+  font-family: $font-body;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-heading;
+  color: $color-heading;
+}
+
+p {
+  padding: 0 15px;
+}
+
+// ---------- Layout ----------
+.content-container {
+  width: 100%;
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.left-column {
+  flex: 2;
+}
+
+.right-column {
+  flex: 1;
+
+  img {
+    width: 100%;
+  }
+}
+
+.firstDiv {
+  margin: 5px 0 20px;
+  padding: 0;
+}
+
+.breadcrumbNav {
+  margin: 0;
+  padding: 0;
+
+  ol {
+    margin: 5px 0 20px;
+    padding: 0;
+  }
+}
+
+#HandshakeOfThreeSection {
+  scroll-margin-top: 80px;
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px ridge;
+  min-height: auto;
+  margin-top: 0;
+}
+
+// ---------- Header and navbar ----------
+header {
+  h2 {
+    color: $color-heading;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: blue;
+  }
+}
+
+.pageHeader h2 {
+  text-align: center;
+  height: 10px;
+}
+
+.navbar {
+  background-color: $color-navbar;
+}
+
+// ---------- Tabs ----------
+.myTabDiv {
+  border-radius: 5%;
+
+  // NOTE: a 100px outline looks like a typo, and .button isn't a Bootstrap class.
+  // If nothing on your pages uses it, you can delete this rule.
+  .button:hover,
+  .button.active,
+  .button:focus-visible {
+    outline: 100px solid $color-tab-outline;
+    outline-offset: 5px;
+  }
+
+  .nav-tabs {
+    background-color: $color-tab-bg;
+
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .nav-item {
+    flex: 1 1 auto; // tabs share the extra space evenly
+    text-align: center;
+    font-family: $font-heading;
+    color: $color-heading;
+    background-color: $color-tab-bg;
+    border-color: $color-heading;
+  }
+
+  .nav-link {
+    width: 100%; // the whole tab is clickable and fills its cell
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  #myTabContent {
+    background-color: $color-tab-content-bg;
+    border-color: $color-heading;
+  }
+}
+
+// ---------- Carousel ----------
+.carousel-caption {
+  background-color: $color-overlay;
+}
+
+// ---------- Blockquote ----------
+.blockquoteContent {
+  padding: 0;
+}
+
+.blockquoteDiv {
+  background-image: linear-gradient(
+    to right,
+    $color-quote-start,
+    $color-quote-mid,
+    $color-quote-end
+  );
+  color: antiquewhite;
+
+  .blockquote-footer {
+    color: azure;
+  }
+}
+
+// ---------- Project cards ----------
+.project-card-img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+}

@@ -1,4 +1,32 @@
-/* @use "variables" as *; */
+.site-footer {
+  background-image: linear-gradient(#b4e1c2, white);
+  padding: 20px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  text-align: center;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-address {
+  color: rgb(24, 24, 165);
+  text-align: left;
+}
+
+.footer-skills {
+  text-align: center;
+}
+.footer-skills ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   --primary-color: #278a5e;
@@ -11,13 +39,6 @@ body {
   font-family: "Oxygen", sans-serif;
 }
 
-.content-container {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 h1,
 h2,
 h3,
@@ -26,34 +47,58 @@ h4 {
   color: #210cc0;
 }
 
-.myTabDiv {
-  border-radius: 5%;
+p {
+  padding: 0 15px;
+}
 
-  .button:hover,
-  .button.active,
-  .button:focus-visible {
-    outline: 100px solid #0a5134;
-    outline-offset: 5px; /* Creates a small gap between the tab and the outer line */
-  }
+.content-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
-  .nav-item {
-    font-family: "Montserrat", cursive;
-    color: hwb(247 5% 25%);
-    background-color: rgb(174, 233, 174);
-    border-color: #210cc0;
-  }
+.left-column {
+  flex: 2;
+}
 
-  #myTabContent {
-    background-color: rgb(216, 236, 215);
-    border-color: #210cc0;
-  }
+.right-column {
+  flex: 1;
+}
+.right-column img {
+  width: 100%;
+}
+
+.firstDiv {
+  margin: 5px 0 20px;
+  padding: 0;
+}
+
+.breadcrumbNav {
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbNav ol {
+  margin: 5px 0 20px;
+  padding: 0;
+}
+
+#HandshakeOfThreeSection {
+  scroll-margin-top: 80px;
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px ridge;
+  min-height: auto;
+  margin-top: 0;
 }
 
 header h2 {
   color: #210cc0;
-  align-items: left;
 }
-
 header h3 {
   font-size: 18px;
   color: blue;
@@ -68,61 +113,62 @@ header h3 {
   background-color: #418561;
 }
 
-.left-column {
-  flex: 2;
+.myTabDiv {
+  border-radius: 5%;
 }
-
-.right-column {
-  flex: 1;
+.myTabDiv .button:hover,
+.myTabDiv .button.active,
+.myTabDiv .button:focus-visible {
+  outline: 100px solid #0a5134;
+  outline-offset: 5px;
 }
-
-.right-column img {
+.myTabDiv .nav-tabs {
+  background-color: rgb(174, 233, 174);
+}
+@media (min-width: 1200px) {
+  .myTabDiv .nav-tabs {
+    flex-wrap: nowrap;
+  }
+}
+.myTabDiv .nav-item {
+  flex: 1 1 auto;
+  text-align: center;
+  font-family: "Montserrat", cursive;
+  color: #210cc0;
+  background-color: rgb(174, 233, 174);
+  border-color: #210cc0;
+}
+.myTabDiv .nav-link {
   width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
-
-p {
-  padding: 0px 15px;
+.myTabDiv #myTabContent {
+  background-color: rgb(216, 236, 215);
+  border-color: #210cc0;
 }
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.carousel-control-prev-icon .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.breadcrumbNav {
-  margin: 0;
-  padding: 0;
-
-  ol {
-    margin: 5px 0px 20px;
-    padding: 0;
-  }
-}
-
-.firstDiv {
-  margin: 5px 0px 20px;
-  padding: 0;
-}
-
 .blockquoteContent {
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+  padding: 0;
 }
 
 .blockquoteDiv {
-    background-image: linear-gradient(to right, #128103, #249315, #34ae23);
-    color: antiquewhite;
-
-    .blockquote-footer {
-        color:azure;
-    }
+  background-image: linear-gradient(to right, #128103, #249315, #34ae23);
+  color: antiquewhite;
+}
+.blockquoteDiv .blockquote-footer {
+  color: azure;
 }
 
-#HandshakeOfThreeSection {
-  scroll-margin-top: 80px;
+.project-card-img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: top;
 }
+
+/*# sourceMappingURL=styles.css.map */
