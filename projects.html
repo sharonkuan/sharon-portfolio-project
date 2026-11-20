@@ -117,80 +117,77 @@
 
         <div class="row content-row content-heading align-left" id="projects">
           <h3>Featured Project</h3>
-          <h4>The Corner Cafe ☕🍰🐾</h4>
-          <p>
-            A responsive Bootstrap website created during the Nucamp Web
-            Fundamentals Workshop and transformed from the original Nucampsite
-            project into a fictional neighborhood coffee shop.
-          </p>
 
-          <div class="row content-row">
-            <h4>Highlights</h4>
-            <div class="col-md-7">
-              <p>
-                A responsive Bootstrap website created during the Nucamp Web
-                Fundamentals Workshop and transformed from the original
-                Nucampsite project into a fictional neighborhood coffee shop.
-              </p>
-            </div>
-            <div class="col-md-4">
-              <ul>
-                <li>Responsive Bootstrap design</li>
-                <li>AI-generated branding and imagery</li>
-                <li>Bootstrap Carousel</li>
-                <li>Multi-item coffee ordering modal</li>
-                <li>Cross-page modal navigation</li>
-                <li>SCSS organization and theming</li>
-                <li>Firebase deployment</li>
-                <li>Project Story & Technical Case Study</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row content-row">
-            <h4>Technologies</h4>
-            <p>
-              HTML5 • CSS3 • SCSS • Bootstrap 5 • JavaScript • npm • Parcel •
-              Firebase
-            </p>
-          </div>
-          <div class="row content-row">
-            <h4>Links</h4>
+          <div class="row row-cols-1 row-cols-md-2 g-4 mb-3">
             <div class="col">
-              <ul>
-                <li>
-                  Live Site -
-                  <a
-                    href="https://sharonk-thecornercafe-2026.web.app/"
-                    target="_blank"
-                    >View The Corner Cafe</a
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="images/TheCornerCafeAboutPage.png"
+                  height="350px"
+                  class="card-img-top"
+                  alt="The Corner Cafe store view!"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">The Corner Cafe ☕🍰🐾</h5>
+                  <p class="card-text">
+                    A responsive Bootstrap website created during the Nucamp Web
+                    Fundamentals Workshop and transformed from the original
+                    Nucampsite project into a fictional neighborhood coffee
+                    shop.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <button
+                    type="button"
+                    class="btn btn-outline-success btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cardModal"
+                    data-title="Our Campsites"
+                    data-img="img/breadcrumb-trail-thumb.jpg"
+                    data-text="Explore our growing database of curated campsites and leave your own review!"
                   >
-                </li>
-                <li>
-                  Project Story -
-                  <a
-                    href="https://sharonk-thecornercafe-2026.web.app/docs/TheCornerCafe_README.pdf"
-                    target="_blank"
-                    >View Project Story</a
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="images/HandshakeOfThree_LinkedInProjects.png"
+                  height="350px"
+                  class="card-img-top"
+                  alt="The Corner Cafe inside look!"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Handshake of Three</h5>
+                  <p class="card-text">
+                    A communication and workflow concept developed through years
+                    of observing how requirements, expectations, and information
+                    move among people, teams, and processes. <br />
+                    <a href="about.html#HandshakeOfThreeSection"
+                      >View About Page Handshake of Three Section</a
+                    >
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <button
+                    type="button"
+                    class="btn btn-outline-success btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cardModal"
+                    data-title="Our Campsites"
+                    data-img="img/breadcrumb-trail-thumb.jpg"
+                    data-text="Explore our growing database of curated campsites and leave your own review!"
                   >
-                </li>
-                <li>
-                  GitHub Repository -
-                  <a
-                    href="https://github.com/sharonkuan/sharon-portfolio-project"
-                    target="_blank"
-                    >View GitHub Repository</a
-                  >
-                </li>
-              </ul>
+                    View Details
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row content-row">
-            <h4>Key Lesson - Featured Project</h4>
-            <p>
-              This project reinforced the importance of technical curiosity,
-              iterative development, testing, debugging, and deployment.
-            </p>
-          </div>
+
           <div class="row content-row">
             <h3>Handshake of Three</h3>
             <p>
@@ -302,5 +299,199 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const cardModal = document.getElementById("cardModal");
+      cardModal.addEventListener("show.bs.modal", (event) => {
+        const btn = event.relatedTarget; // the button that was clicked
+        document.getElementById("cardModalTitle").textContent =
+          btn.dataset.title;
+        document.getElementById("cardModalText").textContent = btn.dataset.text;
+        const img = document.getElementById("cardModalImg");
+        img.src = btn.dataset.img;
+        img.alt = btn.dataset.title;
+      });
+    </script>
+
+    <!-- cardModal-->
+    <div
+      class="modal fade"
+      id="cardModal"
+      tabindex="-1"
+      aria-labelledby="cardModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="cardModalTitle">
+              <img
+                id="cardModalImg"
+                class="img-fluid rounded mb-3"
+                src="images/SharonLogo.png"
+                width="80px"
+                alt=""
+              />
+              The Corner Cafe
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="cardModalText">
+              A responsive Bootstrap website created during the Nucamp Web
+              Fundamentals Workshop and transformed from the original Nucampsite
+              project into a fictional neighborhood coffee shop.
+            </p>
+
+            <section class="row row-content">
+              <div class="col">
+                <div id="accordion">
+                  <div class="card">
+                    <div role="tab" class="card-header">
+                      <h4>
+                        <a data-bs-toggle="collapse" data-bs-target="#bootstrap"
+                          >Highlights
+                        </a>
+                      </h4>
+
+                      <div
+                        class="collapse show"
+                        id="bootstrap"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="card-body">
+                          <ul class="d-none d-sm-block">
+                            <li>Responsive Bootstrap design</li>
+                            <li>AI-generated branding and imagery</li>
+                            <li>Bootstrap Carousel</li>
+                            <li>Multi-item coffee ordering modal</li>
+                            <li>Cross-page modal navigation</li>
+                            <li>SCSS organization and theming</li>
+                            <li>Firebase deployment</li>
+                            <li>Project Story & Technical Case Study</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div role="tab" class="card-header">
+                      <h4>
+                        <a
+                          class="collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#git"
+                          >Technologies
+                        </a>
+                      </h4>
+
+                      <div
+                        class="collapse"
+                        id="git"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="card-body">
+                          <p class="d-done d-sm-block">
+                            HTML5 • CSS3 • SCSS • Bootstrap 5 • JavaScript • npm
+                            • Parcel • Firebase
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div role="tab" class="card-header">
+                      <h4>
+                        <a
+                          class="collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#mongo"
+                          >Links
+                        </a>
+                      </h4>
+
+                      <div
+                        class="collapse"
+                        id="mongo"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="card-body">
+                          <ul class="d-done d-sm-block">
+                            <li>
+                              Live Site -
+                              <a
+                                href="https://sharonk-thecornercafe-2026.web.app/"
+                                target="_blank"
+                                >View The Corner Cafe</a
+                              >
+                            </li>
+                            <li>
+                              Project Story -
+                              <a
+                                href="https://sharonk-thecornercafe-2026.web.app/docs/TheCornerCafe_README.pdf"
+                                target="_blank"
+                                >View Project Story</a
+                              >
+                            </li>
+                            <li>
+                              GitHub Repository -
+                              <a
+                                href="https://github.com/sharonkuan/sharon-portfolio-project"
+                                target="_blank"
+                                >View GitHub Repository</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div role="tab" class="card-header">
+                      <h4>
+                        <a
+                          class="collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#node"
+                          >Key Lesson
+                        </a>
+                      </h4>
+
+                      <div
+                        class="collapse"
+                        id="node"
+                        data-bs-parent="#accordion"
+                      >
+                        <div class="card-body">
+                          <p class="d-done d-sm-block">
+                            This project reinforced the importance of technical
+                            curiosity, iterative development, testing,
+                            debugging, and deployment.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
