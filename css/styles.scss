@@ -143,6 +143,22 @@ header {
   background-color: $color-overlay;
 }
 
+// ---------- Skills table ----------
+// Bootstrap's bg-success / table-success handle the table backgrounds;
+// these rules only change the text colors in the body rows.
+#skillsTable {
+  tbody {
+    th {
+      color: $color-heading; // #210cc0, matches your headings
+      font-family: $font-heading;
+    }
+
+    td {
+      color: $color-table-text; // #212529
+    }
+  }
+}
+
 // ---------- Blockquote ----------
 .blockquoteContent {
   padding: 0;
@@ -167,4 +183,10 @@ header {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: top;
+}
+
+.card-title {
+  color: $color-heading;
+  background-color: $color-tab-bg;
+  text-align: center;
 }

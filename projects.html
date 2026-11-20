@@ -35,12 +35,13 @@
           <h1>Portfolio Project</h1>
           <h2>
             Sharon Kuan
-            <img
-              src="images/SharonLogo.png"
-              alt="Personal Logo"
-              height="45"
-              width="45"
-            />
+            <a href="index.html"
+              ><img
+                src="images/SharonLogo.png"
+                alt="Personal Logo"
+                height="45"
+                width="45"
+            /></a>
           </h2>
           <h3>
             Quality Assurance • Automation • Systems Thinking • Web Development
@@ -113,10 +114,13 @@
           </p>
         </div>
 
-        <div class="row content-heading align-left" id="Featuredrojects">
+        <div class="row content-heading align-left" id="featuredProjects">
           <h3>Featured Projects</h3>
 
-          <div class="row content-row row-cols-1 row-cols-md-2 g-4 mb-3 align-items-stretch">
+          <div
+            class="row content-row row-cols-1 row-cols-md-2 g-4 mb-3 align-items-stretch mt-0"
+            id="cardsDiv"
+          >
             <div class="col">
               <div class="card h-100 shadow-sm">
                 <img
@@ -135,14 +139,16 @@
                   </p>
                 </div>
                 <div class="card-footer bg-transparent border-0">
+                  <!-- TODO (JS course): data-title, data-img, data-text could feed the modal
+     via the show.bs.modal event. Not used yet. -->
                   <button
                     type="button"
                     class="btn btn-outline-success btn-sm"
                     data-bs-toggle="modal"
                     data-bs-target="#cardModal"
-                    data-title="Our Campsites"
-                    data-img="img/breadcrumb-trail-thumb.jpg"
-                    data-text="Explore our growing database of curated campsites and leave your own review!"
+                    data-title="The Corner Cafe"
+                    data-img=""
+                    data-text="Explore The Corner Cafe details!"
                   >
                     View Details
                   </button>
@@ -159,7 +165,15 @@
                   alt="LinkedIn Projects page showing the Handshake of Three project"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Handshake of Three</h5>
+                  <h5 class="card-title">
+                    Handshake of Three
+                    <img
+                      src="images/HandshakeOfThree.png"
+                      alt=""
+                      height="15px"
+                      width="15px"
+                    />
+                  </h5>
                   <p class="card-text">
                     A communication and workflow concept developed through years
                     of observing how requirements, expectations, and information
@@ -175,9 +189,9 @@
                     class="btn btn-outline-success btn-sm"
                     data-bs-toggle="modal"
                     data-bs-target="#handcardModal"
-                    data-title="Our Campsites"
-                    data-img="img/breadcrumb-trail-thumb.jpg"
-                    data-text="Explore our growing database of curated campsites and leave your own review!"
+                    data-title="Handshake of Three"
+                    data-img=""
+                    data-text="Explore Handshake of Three details!"
                   >
                     View Details
                   </button>
@@ -288,7 +302,7 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            <p class="d-done d-sm-block">
+                            <p class="d-none d-sm-block">
                               HTML5 • CSS3 • SCSS • Bootstrap 5 • JavaScript •
                               npm • Parcel • Firebase
                             </p>
@@ -314,7 +328,7 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            <ul class="d-done d-sm-block">
+                            <ul class="d-none d-sm-block">
                               <li>
                                 Live Site -
                                 <a
@@ -361,7 +375,7 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            <p class="d-done d-sm-block">
+                            <p class="d-none d-sm-block">
                               This project reinforced the importance of
                               technical curiosity, iterative development,
                               testing, debugging, and deployment.
@@ -471,7 +485,7 @@
                           data-bs-parent="#handAccordion"
                         >
                           <div class="card-body">
-                            <ul class="d-done d-sm-block">
+                            <ul class="d-none d-sm-block">
                               <li>LinkedIn Project</li>
                               <li>Case Study</li>
                             </ul>
@@ -504,7 +518,7 @@
                           data-bs-parent="#handAccordion"
                         >
                           <div class="card-body">
-                            <p class="d-done d-sm-block">
+                            <p class="d-none d-sm-block">
                               Successful outcomes depend not only on
                               communication, but also on preserving the original
                               intent throughout the process.
@@ -560,8 +574,9 @@
               ><i class="fa fa-envelope-o"></i> sharon_kuan@hotmail.com</a
             ><br />
             <a
-              class="btn btn-social-icon btn-twitter"
+              class="btn btn-social-icon btn-linkedin"
               href="https://www.linkedin.com/in/sharon-kuan-2269bb44/"
+              target="_blank"
               ><i class="fa fa-linkedin"></i
             ></a>
           </div>

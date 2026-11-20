@@ -153,6 +153,14 @@ header h3 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+#skillsTable tbody th {
+  color: #210cc0;
+  font-family: "Montserrat", cursive;
+}
+#skillsTable tbody td {
+  color: #212529;
+}
+
 .blockquoteContent {
   padding: 0;
 }
@@ -169,6 +177,12 @@ header h3 {
   aspect-ratio: 16/9;
   object-fit: cover;
   object-position: top;
+}
+
+.card-title {
+  color: #210cc0;
+  background-color: rgb(174, 233, 174);
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
