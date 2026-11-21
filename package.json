@@ -1,0 +1,24 @@
+{
+  "name": "sharon-portfolio-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel --open",
+    "sass": "sass --watch css/styles.scss css/styles.css",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4",
+    "sass": "^1.99.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.9",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0"
+  }
+}
