@@ -7,7 +7,7 @@
     "build": "parcel build index.html about.html skills.html projects.html --public-url ./"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sharon Kuan",
   "license": "ISC",
   "description": "",
   "devDependencies": {
