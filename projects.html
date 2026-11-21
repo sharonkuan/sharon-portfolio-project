@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat|Oxygen"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Portfolio Project - Sharon Kuan</title>
+    <title>Portfolio Project - Projects | Sharon Kuan</title>
     <link rel="icon" type="image/png" href="/images/SharonLogo.png" />
   </head>
 
@@ -85,8 +85,8 @@
                 ><i class="fa fa-star fa-lg"></i> Skills</a
               >
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
                 ><i class="fa fa-book fa-lg"></i> Projects</a
               >
             </li>
@@ -125,8 +125,7 @@
               <div class="card h-100 shadow-sm">
                 <img
                   src="images/TheCornerCafeAboutPage.png"
-                  height="350px"
-                  class="card-img-top"
+                  class="card-img-top project-card-img"
                   alt="The Corner Cafe About page"
                 />
                 <div class="card-body">
@@ -155,8 +154,7 @@
               <div class="card h-100 shadow-sm">
                 <img
                   src="images/HandshakeOfThree_LinkedInProjects.png"
-                  height="350px"
-                  class="card-img-top"
+                  class="card-img-top project-card-img"
                   alt="LinkedIn Projects page showing the Handshake of Three project"
                 />
                 <div class="card-body">
@@ -164,7 +162,7 @@
                     Handshake of Three
                     <img
                       src="images/HandshakeOfThree.png"
-                      alt=""
+                      alt="Handshake of Three image"
                       height="15px"
                       width="15px"
                     />
@@ -226,7 +224,7 @@
                   class="img-fluid rounded mb-3"
                   src="images/SharonLogo.png"
                   width="80px"
-                  alt=""
+                  alt="Sharon logo"
                 />
                 The Corner Cafe
               </h3>
@@ -248,13 +246,18 @@
                 <div class="col">
                   <div id="accordion">
                     <div class="card">
-                      <div role="tab" class="card-header">
+                      <div class="card-header">
                         <h4>
-                          <a
+                          <button
+                            type="button"
+                            class="btn btn-link p-0 text-start collapsed"
                             data-bs-toggle="collapse"
                             data-bs-target="#highlight"
-                            >Highlights
-                          </a>
+                            aria-expanded="false"
+                            aria-controls="highlight"
+                          >
+                            Highlights
+                          </button>
                         </h4>
 
                         <div
@@ -263,7 +266,7 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            <ul class="d-none d-sm-block">
+                            <ul>
                               <li>Responsive Bootstrap design</li>
                               <li>AI-generated branding and imagery</li>
                               <li>Bootstrap Carousel</li>
@@ -278,14 +281,18 @@
                       </div>
                     </div>
                     <div class="card">
-                      <div role="tab" class="card-header">
+                      <div class="card-header">
                         <h4>
-                          <a
-                            class="collapsed"
+                          <button
+                            type="button"
+                            class="btn btn-link p-0 text-start collapsed"
                             data-bs-toggle="collapse"
                             data-bs-target="#tech"
-                            >Technologies
-                          </a>
+                            aria-expanded="false"
+                            aria-controls="tech"
+                          >
+                            Technologies
+                          </button>
                         </h4>
 
                         <div
@@ -294,7 +301,7 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            <p class="d-none d-sm-block">
+                            <p>
                               HTML5 • CSS3 • SCSS • Bootstrap 5 • JavaScript •
                               npm • Parcel • Firebase
                             </p>
@@ -304,14 +311,18 @@
                     </div>
 
                     <div class="card">
-                      <div role="tab" class="card-header">
+                      <div class="card-header">
                         <h4>
-                          <a
-                            class="collapsed"
+                          <button
+                            type="button"
+                            class="btn btn-link p-0 text-start collapsed"
                             data-bs-toggle="collapse"
                             data-bs-target="#link"
-                            >Links
-                          </a>
+                            aria-expanded="false"
+                            aria-controls="link"
+                          >
+                            Links
+                          </button>
                         </h4>
 
                         <div
@@ -320,12 +331,13 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            <ul class="d-none d-sm-block">
+                            <ul>
                               <li>
                                 Live Site -
                                 <a
                                   href="https://sharonk-thecornercafe-2026.web.app/"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                   >View The Corner Cafe</a
                                 >
                               </li>
@@ -334,6 +346,7 @@
                                 <a
                                   href="https://sharonk-thecornercafe-2026.web.app/docs/TheCornerCafe_README.pdf"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                   >View Project Story</a
                                 >
                               </li>
@@ -342,6 +355,7 @@
                                 <a
                                   href="https://github.com/sharonkuan/sharon-portfolio-project"
                                   target="_blank"
+                                  rel="noopener noreferrer"
                                   >View GitHub Repository</a
                                 >
                               </li>
@@ -351,14 +365,18 @@
                       </div>
                     </div>
                     <div class="card">
-                      <div role="tab" class="card-header">
+                      <div class="card-header">
                         <h4>
-                          <a
-                            class="collapsed"
+                          <button
+                            type="button"
+                            class="btn btn-link p-0 text-start collapsed"
                             data-bs-toggle="collapse"
                             data-bs-target="#keyLesson"
-                            >Key Lesson
-                          </a>
+                            aria-expanded="false"
+                            aria-controls="keyLesson"
+                          >
+                            Key Lesson
+                          </button>
                         </h4>
 
                         <div
@@ -367,7 +385,7 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            <p class="d-none d-sm-block">
+                            <p>
                               This project reinforced the importance of
                               technical curiosity, iterative development,
                               testing, debugging, and deployment.
@@ -409,7 +427,7 @@
                   class="img-fluid rounded mb-3"
                   src="images/SharonLogo.png"
                   width="80px"
-                  alt=""
+                  alt="Sharon logo"
                 />
                 Handshake of Three
               </h3>
@@ -434,13 +452,18 @@
                 <div class="col">
                   <div id="handAccordion">
                     <div class="card">
-                      <div role="tab" class="card-header">
+                      <div class="card-header">
                         <h4>
-                          <a
+                          <button
+                            type="button"
+                            class="btn btn-link p-0 text-start collapsed"
                             data-bs-toggle="collapse"
                             data-bs-target="#handFocus"
-                            >Focus Areas
-                          </a>
+                            aria-expanded="false"
+                            aria-controls="handFocus"
+                          >
+                            Focus Areas
+                          </button>
                         </h4>
 
                         <div
@@ -449,7 +472,7 @@
                           data-bs-parent="#handAccordion"
                         >
                           <div class="card-body">
-                            <ul class="d-none d-sm-block">
+                            <ul>
                               <li>Communication</li>
                               <li>Requirements Understanding</li>
                               <li>Systems Thinking</li>
@@ -461,14 +484,18 @@
                       </div>
                     </div>
                     <div class="card">
-                      <div role="tab" class="card-header">
+                      <div class="card-header">
                         <h4>
-                          <a
-                            class="collapsed"
+                          <button
+                            type="button"
+                            class="btn btn-link p-0 text-start collapsed"
                             data-bs-toggle="collapse"
                             data-bs-target="#handLinkedIn"
-                            >LinkedIn
-                          </a>
+                            aria-expanded="false"
+                            aria-controls="handLinkedIn"
+                          >
+                            LinkedIn
+                          </button>
                         </h4>
 
                         <div
@@ -477,7 +504,7 @@
                           data-bs-parent="#handAccordion"
                         >
                           <div class="card-body">
-                            <ul class="d-none d-sm-block">
+                            <ul>
                               <li>LinkedIn Project</li>
                               <li>Case Study</li>
                             </ul>
@@ -485,6 +512,7 @@
                               <a
                                 href="https://www.linkedin.com/in/sharon-kuan-2269bb44/"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 >View LinkedIn</a
                               >
                             </p>
@@ -494,14 +522,18 @@
                     </div>
 
                     <div class="card">
-                      <div role="tab" class="card-header">
+                      <div class="card-header">
                         <h4>
-                          <a
-                            class="collapsed"
+                          <button
+                            type="button"
+                            class="btn btn-link p-0 text-start collapsed"
                             data-bs-toggle="collapse"
                             data-bs-target="#handKeyLesson"
-                            >Key Lesson
-                          </a>
+                            aria-expanded="false"
+                            aria-controls="handKeyLesson"
+                          >
+                            Key Lesson
+                          </button>
                         </h4>
 
                         <div
@@ -510,7 +542,7 @@
                           data-bs-parent="#handAccordion"
                         >
                           <div class="card-body">
-                            <p class="d-none d-sm-block">
+                            <p>
                               Successful outcomes depend not only on
                               communication, but also on preserving the original
                               intent throughout the process.
@@ -556,8 +588,8 @@
             </ul>
           </div>
           <div class="footer-contact">
-            <a role="button" class="btn btn-link" href="tel:+14257618888"
-              ><i class="fa fa-phone"></i> 1-425-761-****</a
+            <a role="button" class="btn btn-link" href="tel:+14257617689"
+              ><i class="fa fa-phone"></i> 1-425-761-7689</a
             ><br />
             <a
               role="button"
@@ -569,6 +601,7 @@
               class="btn btn-social-icon btn-linkedin"
               href="https://www.linkedin.com/in/sharon-kuan-2269bb44/"
               target="_blank"
+              rel="noopener noreferrer"
               ><i class="fa fa-linkedin"></i
             ></a>
           </div>

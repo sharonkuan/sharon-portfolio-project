@@ -28,6 +28,24 @@
   padding: 0;
 }
 
+@media (max-width: 767.98px) {
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .footer-contact .btn {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer-address,
+  .footer-skills,
+  .footer-contact {
+    text-align: center;
+  }
+  .footer-contact a {
+    overflow-wrap: anywhere;
+  }
+}
 :root {
   --primary-color: #278a5e;
   --header-gradient-start: #055929;
@@ -43,7 +61,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Montserrat", cursive;
+  font-family: "Montserrat", sans-serif;
   color: #210cc0;
 }
 
@@ -119,7 +137,6 @@ header h3 {
 .myTabDiv .button:hover,
 .myTabDiv .button.active,
 .myTabDiv .button:focus-visible {
-  outline: 100px solid #0a5134;
   outline-offset: 5px;
 }
 .myTabDiv .nav-tabs {
@@ -133,7 +150,7 @@ header h3 {
 .myTabDiv .nav-item {
   flex: 1 1 auto;
   text-align: center;
-  font-family: "Montserrat", cursive;
+  font-family: "Montserrat", sans-serif;
   color: #210cc0;
   background-color: rgb(174, 233, 174);
   border-color: #210cc0;
@@ -155,12 +172,36 @@ header h3 {
 
 #skillsTable tbody th {
   color: #210cc0;
-  font-family: "Montserrat", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 #skillsTable tbody td {
   color: #212529;
 }
 
+@media (max-width: 575.98px) {
+  #skillsTable thead {
+    display: none;
+  }
+  #skillsTable table,
+  #skillsTable tbody,
+  #skillsTable tr,
+  #skillsTable th,
+  #skillsTable td {
+    display: block;
+    width: 100%;
+  }
+  #skillsTable tbody th {
+    padding-bottom: 0;
+  }
+  #skillsTable tbody td {
+    padding-top: 0.25rem;
+  }
+  #skillsTable tbody td::before {
+    content: "Skills: ";
+    font-weight: bold;
+    color: #210cc0;
+  }
+}
 .blockquoteContent {
   padding: 0;
 }
@@ -183,6 +224,10 @@ header h3 {
   color: #210cc0;
   background-color: rgb(174, 233, 174);
   text-align: center;
+}
+
+.card-body p {
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

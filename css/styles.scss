@@ -2,7 +2,6 @@
 @use "footer";
 
 // ---------- Base ----------
-// Kept as CSS custom properties in case main-content.css or footer.css use them
 :root {
   --primary-color: #{$color-primary};
   --header-gradient-start: #{$color-header-start};
@@ -99,12 +98,9 @@ header {
 .myTabDiv {
   border-radius: 5%;
 
-  // NOTE: a 100px outline looks like a typo, and .button isn't a Bootstrap class.
-  // If nothing on your pages uses it, you can delete this rule.
   .button:hover,
   .button.active,
   .button:focus-visible {
-    outline: 100px solid $color-tab-outline;
     outline-offset: 5px;
   }
 
@@ -159,6 +155,38 @@ header {
   }
 }
 
+// ---------- Skills table: stacked on phones ----------
+@media (max-width: 575.98px) {
+  #skillsTable {
+    thead {
+      display: none; // the "Category / Skills" labels are redundant when stacked
+    }
+
+    table,
+    tbody,
+    tr,
+    th,
+    td {
+      display: block;
+      width: 100%;
+    }
+
+    tbody th {
+      padding-bottom: 0;
+    }
+
+    tbody td {
+      padding-top: 0.25rem;
+    }
+
+    tbody td::before {
+      content: "Skills: ";
+      font-weight: bold;
+      color: $color-heading;
+    }
+  }
+}
+
 // ---------- Blockquote ----------
 .blockquoteContent {
   padding: 0;
@@ -189,4 +217,8 @@ header {
   color: $color-heading;
   background-color: $color-tab-bg;
   text-align: center;
+}
+
+.card-body p {
+  padding: 0;
 }

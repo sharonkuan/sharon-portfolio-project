@@ -30,3 +30,26 @@
     padding: 0;
   }
 }
+
+// ---------- Footer: small screens ----------
+@media (max-width: 767.98px) {
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr); // lets the column shrink below its content width
+    gap: 1rem;
+  }
+
+    .footer-contact .btn {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-address,
+  .footer-skills,
+  .footer-contact {
+    text-align: center; // children had their own left/right alignment
+  }
+
+  .footer-contact a {
+    overflow-wrap: anywhere; // lets the long email break instead of stretching the page
+  }
+}
