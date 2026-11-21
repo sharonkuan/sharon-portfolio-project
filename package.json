@@ -4,7 +4,7 @@
   "scripts": {
     "start": "parcel --open",
     "sass": "sass --watch css/styles.scss css/styles.css",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html about.html skills.html projects.html --public-url ./"
   },
   "keywords": [],
   "author": "",
